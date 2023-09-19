@@ -24,6 +24,7 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
     background: var(--dark);
     -webkit-font-smoothing: antialiased;
+    height: 5000px;
     
 }
 
@@ -272,4 +273,68 @@ section.about .content .right p span:nth-child(1):after{
     right: 0;
     top: 0;
 
+
+
 }
+/* section skill */
+
+section.skills .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section.skills .content .left{
+    display:  grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+section.skills .content .left .heading i {
+    color: var(--fade);
+    font-size: 52px;
+}
+
+section.skills .content .left .heading .h5 {
+    font-size: 16px;
+    margin-top: 0.5rem;
+    color: var(--mild);
+}
+
+section.skills .content .left p {
+    font-size: 14px;
+    columns: var(--ternary);
+    line-height: 1.7;
+}
+
+section.skills .content .left p.center {
+    color: var(--fade);
+}
+
+section.skills .content .left .item {
+    margin-bottom:  2.6rem;
+    margin-left:  15px;
+    position: relative;
+}
+
+section.skills .content .left .timeline_wrapper {
+    border-left: 2px dotted var(--dark-blaue);
+}
+
+section.skills .content .left .item:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--info);
+    border-radius: 50% ;
+    margin-left: -21px;
+}
+
+
+
+
+
+
+
