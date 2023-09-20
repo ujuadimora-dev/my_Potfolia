@@ -16,7 +16,7 @@ $(document).ready(function() {
         tooltip.innerText = percentage + '%';
         bar.style.width = percentage + '%';
 
-        console.log(percentage);
+        // console.log(percentage);
     });
 
     // Counter
@@ -46,4 +46,68 @@ $(document).ready(function() {
     }
 
     runCounter(); 
+
+
+    // for images fillter
+
+    // For image filter
+
+var $wrapper = $('.portfolio_wrapper');
+
+// Initialize Isotope
+$wrapper.isotope({
+    filter: '*',
+    layoutMode: 'masonry',
+    animationOptions: {
+        duration: 750,
+        easing: 'linear'
+    }
+});
+
+let links = document.querySelectorAll('.tabls a');
+
+links.forEach(link => {
+    let selector = link.dataset.filter;
+
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        $wrapper.isotope({
+            filter: selector, // Use the variable selector, not 'selector' in quotes
+            layoutMode: 'masonry',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear'
+            }
+        });
+       
+
+        links.forEach(link =>{
+            link.classList.remove('active');
+        })
+        e.target.classList.add('active');
+    });
+});
+
+// magnific popup
+
+$('.magnify').magnificPopup ({
+    type : 'image',
+    gallery: {
+        enabled : true
+    },
+
+    zoom : {
+        enable: true
+    }
+})
+// slider here
+$('.slider').slick({
+    arrows: false,
+    autoplay: true
+
+
+});
+
+
 });
