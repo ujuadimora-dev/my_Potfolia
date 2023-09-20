@@ -16,6 +16,9 @@
     --sucess : #1ecab8;
     --danger : #f1646c;
     --dark-blaue : #28365f;
+    --dark-grey : #171f33;
+    --yellolw : #f3c74d;
+    --black : #080808;
 
 }
 
@@ -374,8 +377,48 @@ section.skills .skills_wrapper .skill_box .progress_wrap .progress_bar .tooltip 
 
 }
 
+/* counter section*/
+section.counter_section {
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--dark-grey);
+}
 
+section.counter_section > div {
+    display: flex;
+    align-items: center;
+}
+
+section.counter_section > div {
+    font-size: 22px;
+    margin-right: 5px;
+
+}
+
+section.counter_section > div:nth-child(1) i{
+    color: var(--yellolw);
+}
+
+section.counter_section > div:nth-child(2) i{
+    color: var(--sucess);
+}
+
+section.counter_section > div:nth-child(3) i{
+    color: var(--dribble);
+}
+
+section.counter_section > div h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--fade);
+    margin-bottom: 8px;
+}
+
+section.counter_section > div h5{
+    font-size: 14px;
+    color: var(--fade);
+}
 
 
 
