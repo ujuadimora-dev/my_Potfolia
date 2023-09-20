@@ -515,3 +515,17 @@ section.my_work .wrapper .portfolio .portfolio_wrapper .item{
  section.my_work .wrapper .slider_wrapper{
     overflow: hidden;
  }
+
+ section.platform .brand_warpper{
+    display:  flex;
+    align-items: center;
+    justify-content: space-around;
+
+ }
+
+ section.platform .brand_warpper img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+ }
